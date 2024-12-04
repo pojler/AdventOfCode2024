@@ -1,6 +1,6 @@
 import re
 
-input = open("input/Day3", "r").read().splitlines()
+input = open("input/day3", "r").read().splitlines()
 multipSum = 0
 multipSumWithFlags = 0
 pattern = re.compile(r'mul\(\d{1,3},\d{1,3}\)')
