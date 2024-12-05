@@ -4,11 +4,10 @@ ruleSet = [[int(elem) for elem in line.split("|")]for line in inputSplit[0].spli
 pageUpdates = [[int(elem) for elem in line.split(",")]for line in inputSplit[1].split("\n")]
 
 def validate (update):
-    flag = True
     for i in range(len(update) -1 ):
         if ([update[i], update[i+1]] not in ruleSet ) :
-                flag = False
-    return flag
+                return False
+    return True
 
 sumOfMidElementsInCorrectUpdates = 0
 sumOfMidElementsInIncorrectUpdates = 0
